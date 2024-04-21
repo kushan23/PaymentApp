@@ -22,7 +22,7 @@
       "static/chunks/1dd3208c-08aa46e5b0326fc6.js",
       "static/chunks/997-95fea116fdcf3366.js",
       "static/chunks/main-app-f498548d7e9bb7e5.js",
-      "static/chunks/app/page-eb812237b701c272.js"
+      "static/chunks/app/page-620a433c2430e1bd.js"
     ],
     "/(dashboard)/layout": [
       "static/chunks/webpack-959ec4eac1d15d39.js",
@@ -31,12 +31,12 @@
       "static/chunks/main-app-f498548d7e9bb7e5.js",
       "static/chunks/app/(dashboard)/layout-b223872e7b7b6baa.js"
     ],
-    "/(dashboard)/transfer/page": [
+    "/(dashboard)/dashboard/page": [
       "static/chunks/webpack-959ec4eac1d15d39.js",
       "static/chunks/1dd3208c-08aa46e5b0326fc6.js",
       "static/chunks/997-95fea116fdcf3366.js",
       "static/chunks/main-app-f498548d7e9bb7e5.js",
-      "static/chunks/app/(dashboard)/transfer/page-5ef12a4a24c8b706.js"
+      "static/chunks/app/(dashboard)/dashboard/page-c9033960644d67c4.js"
     ],
     "/(dashboard)/transactions/page": [
       "static/chunks/webpack-959ec4eac1d15d39.js",
@@ -52,12 +52,12 @@
       "static/chunks/main-app-f498548d7e9bb7e5.js",
       "static/chunks/app/(dashboard)/p2p/page-37f250e016cfea83.js"
     ],
-    "/(dashboard)/dashboard/page": [
+    "/(dashboard)/transfer/page": [
       "static/chunks/webpack-959ec4eac1d15d39.js",
       "static/chunks/1dd3208c-08aa46e5b0326fc6.js",
       "static/chunks/997-95fea116fdcf3366.js",
       "static/chunks/main-app-f498548d7e9bb7e5.js",
-      "static/chunks/app/(dashboard)/dashboard/page-c9033960644d67c4.js"
+      "static/chunks/app/(dashboard)/transfer/page-5ef12a4a24c8b706.js"
     ]
   }
 }

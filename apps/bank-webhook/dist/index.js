@@ -29338,6 +29338,7 @@ app.post("/hdfcWebhook", async (req, res) => {
         },
         data: {
           amount: {
+            // You can also get this from your DB
             increment: Number(paymentInformation.amount)
           }
         }

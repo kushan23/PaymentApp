@@ -5,38 +5,32 @@
   [1m[38;2;173;127;168m ▲ Next.js 14.1.4[39m[22m
 
  [37m[1m [22m[39m Creating an optimized production build ...
- ⚠ Compiled with warnings
-
-./app/api/user/route.ts
-Attempted import error: 'PrismaClient' is not exported from '@repo/db/client' (imported as 'PrismaClient').
-
-Import trace for requested module:
-./app/api/user/route.ts
-
  [32m[1m✓[22m[39m Compiled successfully
-[?25l [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[31mFailed to compile.
-[39m
-[36m./app/api/auth/[...nextauth]/route.ts[39m:[33m4[39m:[33m26[39m
-[31m[1mType error[22m[39m: Argument of type '{ providers: OAuthConfig<GoogleProfile>[]; callbacks: { signIn({ user }: { user: { email: string; name: string; }; }): Promise<boolean>; }; secret: string; }' is not assignable to parameter of type 'AuthOptions'.
-  The types of 'callbacks.signIn' are incompatible between these types.
-    Type '({ user }: { user: { email: string; name: string; }; }) => Promise<boolean>' is not assignable to type '(params: { user: User | AdapterUser; account: Account | null; profile?: Profile | undefined; email?: { verificationRequest?: boolean | undefined; } | undefined; credentials?: Record<...> | undefined; }) => Awaitable<...>'.
-      Types of parameters '__0' and 'params' are incompatible.
-        Type '{ user: User | AdapterUser; account: Account | null; profile?: Profile | undefined; email?: { verificationRequest?: boolean | undefined; } | undefined; credentials?: Record<...> | undefined; }' is not assignable to type '{ user: { email: string; name: string; }; }'.
-          Types of property 'user' are incompatible.
-            Type 'User | AdapterUser' is not assignable to type '{ email: string; name: string; }'.
-              Type 'User' is not assignable to type '{ email: string; name: string; }'.
-                Types of property 'email' are incompatible.
-                  Type 'string | null | undefined' is not assignable to type 'string'.
-                    Type 'undefined' is not assignable to type 'string'.
+[?25l [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m...[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G [37m[1m [22m[39m Linting and checking validity of types  [36m..[39m[2K[1G[?25h
+[36m./lib/auth.ts[39m
+[33m7[39m:[33m23[39m  [33m[1mWarning[22m[39m: GOOGLE_CLIENT_ID is not listed as a dependency in turbo.json  [90m[1mturbo/no-undeclared-env-vars[22m[39m
+[33m8[39m:[33m27[39m  [33m[1mWarning[22m[39m: GOOGLE_CLIENT_SECRET is not listed as a dependency in turbo.json  [90m[1mturbo/no-undeclared-env-vars[22m[39m
+[33m47[39m:[33m13[39m  [33m[1mWarning[22m[39m: NEXTAUTH_SECRET is not listed as a dependency in turbo.json  [90m[1mturbo/no-undeclared-env-vars[22m[39m
 
-[0m [90m 2 |[39m [36mimport[39m { authoptions } [36mfrom[39m [32m"../../../../lib/auth"[39m[0m
-[0m [90m 3 |[39m[0m
-[0m[31m[1m>[22m[39m[90m 4 |[39m [36mconst[39m handler [33m=[39m [33mNextAuth[39m(authoptions)[0m
-[0m [90m   |[39m                          [31m[1m^[22m[39m[0m
-[0m [90m 5 |[39m[0m
-[0m [90m 6 |[39m [36mexport[39m { handler [36mas[39m [33mGET[39m[33m,[39m handler [36mas[39m [33mPOST[39m }[0m
-[?25h[37;40mnpm[0m [0m[31;40mERR![0m [0m[35mLifecycle script `build` failed with error:[0m 
-[0m[37;40mnpm[0m [0m[31;40mERR![0m [0m[35mError: command failed[0m 
-[0m[37;40mnpm[0m [0m[31;40mERR![0m [0m[35m  in workspace: web@1.0.0[0m 
-[0m[37;40mnpm[0m [0m[31;40mERR![0m [0m[35m  at location: /Users/kushan/Desktop/paytmClone/apps/merchant-app[0m 
-[0m
+[36minfo[39m  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+[?25l [37m[1m [22m[39m Linting and checking validity of types  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Linting and checking validity of types     [32m[1m✓[22m[39m Linting and checking validity of types 
+[?25l [37m[1m [22m[39m Collecting page data  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting page data  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting page data  [36m...[39m[2K[1G[?25h [37m[1m [22m[39m Collecting page data     [32m[1m✓[22m[39m Collecting page data 
+[?25l [37m[1m [22m[39m Generating static pages (0/5)  [36m[    ][39m[2K[1G [37m[1m [22m[39m Generating static pages (0/5)  [36m[=   ][39m[2K[1G [37m[1m [22m[39m Generating static pages (0/5)  [36m[==  ][39m  [37m[1m [22m[39m Generating static pages (3/5) 
+[2K[1G[1A[2K[1G[?25h [32m[1m✓[22m[39m Generating static pages (5/5) 
+[?25l [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[?25l [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m..[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m...[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m...[39m[2K[1G [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting build traces  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Collecting build traces     [32m[1m✓[22m[39m Collecting build traces 
+[2K[1G[?25h [37m[1m [22m[39m Finalizing page optimization     [32m[1m✓[22m[39m Finalizing page optimization 
+
+[4mRoute (app)[24m                              [4mSize[24m     [4mFirst Load JS[24m
+┌ ○ /                                    1.11 kB         [37m[1m108 kB[22m[39m
+├ ○ /_not-found                          881 B          [37m[1m85.3 kB[22m[39m
+└ λ /api/auth/[...nextauth]              0 B                [37m[1m0 B[22m[39m
++ First Load JS shared by all            [37m[1m84.4 kB[22m[39m
+  ├ chunks/1dd3208c-f9971ff387577daf.js  53.4 kB
+  ├ chunks/997-3e507830b1c9d771.js       29 kB
+  └ other shared chunks (total)          1.96 kB
+
+
+○  (Static)   prerendered as static content
+λ  (Dynamic)  server-rendered on demand using Node.js
+
+[?25h
