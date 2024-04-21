@@ -1,0 +1,22 @@
+{
+  "node": {
+    "89f90ede5934404f61812810462a1c0f0117c75b": {
+      "workers": {
+        "app/(dashboard)/transfer/page": "(action-browser)/../../node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkushan%2FDesktop%2FpaytmClone%2Fapps%2Fuser-app%2Fapp%2Flib%2Factions%2FcreateOnRamptxn.ts%22%2C%5B%22createOnRampTransaction%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(dashboard)/transfer/page": "action-browser"
+      }
+    },
+    "04bde9d3a78963861024067214d40c4a07ee43ac": {
+      "workers": {
+        "app/(dashboard)/p2p/page": "(action-browser)/../../node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkushan%2FDesktop%2FpaytmClone%2Fapps%2Fuser-app%2Fapp%2Flib%2Factions%2Fp2ptrasnfer.ts%22%2C%5B%22p2pTransfer%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(dashboard)/p2p/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "KStSTddSaPpEOC2SS4Sd0QE1W3pA3f89wzzkrc/EGBs="
+}
