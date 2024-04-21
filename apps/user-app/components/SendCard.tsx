@@ -14,7 +14,7 @@ export default function SendCard() {
             <Card title="SEND">
             <div className="min-w-60 pr-5">
             <TextInput label={"Number"} placeholder={"Number"} onChange={(val) => {
-            setNumber((val))
+            setNumber(val)
         }} />
             <TextInput label={"Amount"} placeholder={"Amount"} onChange={(val) => {
             setAmount(Number(val))
